@@ -1,0 +1,16 @@
+.poke-Wrapper{
+text-align: center;
+}
+
+.pokeName{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight: 600;
+text-transform: capitalize;
+letter-spacing: 8px;
+font-size: 20px;
+}
+
+.pokeImage{
+    width: 294px;
+    height: 145px;
+}
