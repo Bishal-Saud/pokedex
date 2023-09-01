@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     background-color: #212534;
  
@@ -6,7 +10,7 @@ body{
 .pokemonDetails-Wrapper{
 display: flex;
 flex-direction: column;
-margin: auto;
+margin: 2rem auto;
 }
 
 @property --rotate {
@@ -20,6 +24,15 @@ margin: auto;
     --card-width: calc(var(--card-height) / 1.5);
   }
 
+  .pokemonDetails-Name{
+    font-size: 40px;
+    letter-spacing: 10px;
+    margin: 10px 0;
+  }
+  .pokemonDetails-Types{
+    margin:10px 0;
+
+  }
 .card {
     background: #191c29;
     width: var(--card-width);
@@ -34,7 +47,7 @@ margin: auto;
     font-size: 1.5em;
     color: rgb(88 199 250 / 0%);
     cursor: pointer;
-    font-family: cursive;
+   
   }
   
   .card:hover {
@@ -68,5 +81,6 @@ margin: auto;
   .pokemonDetails-Image{
     width: 294px;
     height: 145px;
+    margin:2rem 0;
   }
   

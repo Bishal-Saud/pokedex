@@ -28,14 +28,13 @@ downloadParams()
 return(
     <>
     <div className="pokemonDetails-Wrapper card">
-        <div className="pokemonDetails-Name">
-Name: {pokemon.name}
+        <div className="pokemonDetails-Name">{pokemon.name}
         </div>
         <img className="pokemonDetails-Image" src={pokemon.image} alt="pokemonImage" />
-        <p className="pokemonDetails-Height">Height:{pokemon.height}</p>
-        <p className="pokemonDetails-Weight">Weight:{pokemon.weight}</p>
+        <p className="pokemonDetails-Height">Height: {pokemon.height}</p>
+        <p className="pokemonDetails-Weight">Weight: {pokemon.weight}</p>
         <div className="pokemonDetails-Types">
-            {pokemon.types &&  pokemon.types.map((type)=> <div key={type}> Type:{type}</div>)}
+            {pokemon.types &&  pokemon.types.map((type)=> <div key={type}> {type}</div>)}
         </div>
         <Link to={'/'}>Go Back</Link>
         </div> 
