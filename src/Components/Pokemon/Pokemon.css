@@ -1,5 +1,11 @@
 .poke-Wrapper{
 text-align: center;
+
+}
+
+.poke-Wrapper a{
+    text-decoration: none;
+color: white;
 }
 
 .pokeName{

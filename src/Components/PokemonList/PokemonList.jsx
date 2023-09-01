@@ -43,22 +43,23 @@ setIsLoading(false) // to make loading false after completing
 
 //we use this for showing result once when refresh to the help of [] if this is not than it shows same things more when refresh
     useEffect(()=>{
-console.log('Checking use effect');
+// console.log('Checking use effect');
 downloadApi()
     },[pokemonUrlApi])
 
     return(
         <div className="listofPokemon">
         {/* <h2>Pokemon Lists</h2> */}
-        <div className="controlsBtn">
+        
+        <div className="pokemonData">
+            {(isLoading) ? 'Loading .... ': 
+        pokelist.map((p)=><Pokemon image={p.image} name={p.name} key={p.id} id={p.id}/>)
+    }</div>
+    <div className="controlsBtn">
     <button disabled={setPrev == null} onClick={ ()=>setPokemonUrlApi(prev) } >Prev</button>
     <button disabled={setNext == null} onClick={ ()=>setPokemonUrlApi(next)} >Next</button>
 
         </div>
-        <div className="pokemonData">
-            {(isLoading) ? 'Loading .... ': 
-        pokelist.map((p)=><Pokemon image={p.image} name={p.name} key={p.id}/>)
-    }</div>
         </div>
     )
 }
