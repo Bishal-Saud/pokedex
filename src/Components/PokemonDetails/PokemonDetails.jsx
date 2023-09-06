@@ -3,10 +3,11 @@ import { Link, useParams } from "react-router-dom";
 import "./PokemonDetails.css";
 // import pokemonHook from "../PokemonHook/pokemoonHook.js";
 import pokemonHookList from "../PokemonHook/pokemonHookList";
-function PokemonDetails() {
+function PokemonDetails({pokemonName}) {
   const { id } = useParams();
-const {pokemon} = pokemonHookList(id);
-console.log('poke',pokemon)
+const {pokemon} = pokemonHookList(id,pokemonName);
+
+
 
   return (
     <>

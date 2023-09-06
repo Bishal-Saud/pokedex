@@ -2,4 +2,8 @@
     width: 40rem;
     height: 2rem;
     padding: 1rem;
+    background: none;
+    color: white;
+    outline: none;
+    border: 1px solid #686262;
 }
