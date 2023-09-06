@@ -6,7 +6,7 @@ return(
         <Link to={`pokemon/${id}`}>
     <p className="pokeName">{name}</p>
     <div><img  className="pokeImage" src={image} alt="pokemonImage" /></div>
-    <span>Click Me</span>
+    <span>Touch Me</span>
         </Link>
     </div>
 )
