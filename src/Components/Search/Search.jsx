@@ -1,7 +1,7 @@
 import useDebounce from '../PokemonHook/useDebounce';
 import './search.css'
 function Search({updateSearch}){
-    const useDebounceCallback = useDebounce((e)=> updateSearch(e.target.value))
+    const useDebounceCallback = useDebounce((e)=> updateSearch(e.target.value.toLowerCase()))
     return(
         <>
         <div>

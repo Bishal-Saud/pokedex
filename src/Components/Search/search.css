@@ -6,4 +6,18 @@
     color: white;
     outline: none;
     border: 1px solid #686262;
+
+}
+
+@media screen and (max-width:710px) {
+    .inp-search{
+        width: 25rem;
+    }
+}
+
+
+@media screen and (max-width:450px) {
+    .inp-search{
+        width: 15rem;
+    }
 }
